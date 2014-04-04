@@ -21,6 +21,8 @@
 		609F85BC18EE32820015E9F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609F859E18EE32820015E9F3 /* UIKit.framework */; };
 		609F85C418EE32820015E9F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 609F85C218EE32820015E9F3 /* InfoPlist.strings */; };
 		609F85C618EE32820015E9F3 /* barviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 609F85C518EE32820015E9F3 /* barviewTests.m */; };
+		609F85D118EE3C900015E9F3 /* MRBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 609F85D018EE3C900015E9F3 /* MRBarView.m */; };
+		609F85D418EE50710015E9F3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609F85D318EE50710015E9F3 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		609F85C118EE32820015E9F3 /* barviewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "barviewTests-Info.plist"; sourceTree = "<group>"; };
 		609F85C318EE32820015E9F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		609F85C518EE32820015E9F3 /* barviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = barviewTests.m; sourceTree = "<group>"; };
+		609F85CF18EE3C900015E9F3 /* MRBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRBarView.h; path = MRBarView/MRBarView.h; sourceTree = "<group>"; };
+		609F85D018EE3C900015E9F3 /* MRBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRBarView.m; path = MRBarView/MRBarView.m; sourceTree = "<group>"; };
+		609F85D318EE50710015E9F3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609F85D418EE50710015E9F3 /* QuartzCore.framework in Frameworks */,
 				609F859D18EE32820015E9F3 /* CoreGraphics.framework in Frameworks */,
 				609F859F18EE32820015E9F3 /* UIKit.framework in Frameworks */,
 				609F859B18EE32820015E9F3 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,8 @@
 		609F859918EE32820015E9F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				609F85D318EE50710015E9F3 /* QuartzCore.framework */,
+				609F85D218EE3C980015E9F3 /* MRBarView */,
 				609F859A18EE32820015E9F3 /* Foundation.framework */,
 				609F859C18EE32820015E9F3 /* CoreGraphics.framework */,
 				609F859E18EE32820015E9F3 /* UIKit.framework */,
@@ -150,6 +158,15 @@
 				609F85C218EE32820015E9F3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		609F85D218EE3C980015E9F3 /* MRBarView */ = {
+			isa = PBXGroup;
+			children = (
+				609F85CF18EE3C900015E9F3 /* MRBarView.h */,
+				609F85D018EE3C900015E9F3 /* MRBarView.m */,
+			);
+			name = MRBarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				609F85A718EE32820015E9F3 /* main.m in Sources */,
+				609F85D118EE3C900015E9F3 /* MRBarView.m in Sources */,
 				609F85B118EE32820015E9F3 /* MRViewController.m in Sources */,
 				609F85AB18EE32820015E9F3 /* MRAppDelegate.m in Sources */,
 			);

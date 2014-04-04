@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MRBarView.h"
 
 @interface MRViewController : UIViewController
 
