@@ -3,7 +3,7 @@ MRBarView
 
 A single bar chart for iOS
 
-![MRBarView](https://raw.github.com/mrojas/MRBarView/blob/master/barview.png)
+![MRBarView](https://raw.github.com/mrojas/MRBarView/master/barview.png)
 
 ###Installation
 
