@@ -13,21 +13,21 @@ A single bar chart for iOS
 MRBarView follows the usual data source pattern. You view controller should implement the protocol **MRBarViewDataSource**.
 The following methods are mandatory:
 
-- numberOfSegmentsInBarView: Determines how many segments are in the bar view. Example:
+- **numberOfSegmentsInBarView**: Determines how many segments are in the bar view. Example:
 ```Objective-C
 - (NSInteger)numberOfSegmentsInBarView:(MRBarView *)barView {
     return 5;
 }
 ```
 
-- valueAtIndex: Returns the value for a given segment. Example:
+- **valueAtIndex**: Returns the value for a given segment. Example:
 ```Objective-C
 - (CGFloat)barView:(MRBarView *)barView valueAtIndex:(NSInteger)index {
     return 4.13;
 }
 ```
 
-- colorAtIndex: Returns the color for a given segment. Example:
+- **colorAtIndex**: Returns the color for a given segment. Example:
 ```Objective-C
 - (UIColor *)barView:(MRBarView *)barView colorAtIndex:(NSInteger)index {
     return [UIColor redColor];
@@ -36,7 +36,7 @@ The following methods are mandatory:
 
 Optionally, you can return a label for each segment. Labels are shown below the bar.
 
-- labelAtIndex: Returns the label for a given segment. Example:
+- **labelAtIndex**: Returns the label for a given segment. Example:
 ```Objective-C
 - (NSString *)barView:(MRBarView *)barView labelAtIndex:(NSInteger)index {
     return @"Segment 1";
@@ -54,12 +54,12 @@ In addition to using the bar view by doing [[MRBarView alloc] initWithFrame:...]
 
 The following properties are customizable:
 
-- UIColor *barBackgroundColor: The background color of the bar. Default: white.
-- UIFont *labelFont: Font for the labels. Default: system font, 14dp.
-- UIColor *labelColor: Color for the labels. Default: Black.
-- CGFloat barHeight: Height of the bar. Default: 35dp.
-- CGFloat barMargin: The margin between the bar and the borders of the container. Default: 10dp.
-- BOOL roundedCorners: Whether the bar and the container have rounded corners or not. Default: NO.
+- **barBackgroundColor**: The background color of the bar. Default: white.
+- **labelFont**: Font for the labels. Default: system font, 14dp.
+- **labelColor**: Color for the labels. Default: Black.
+- **barHeight**: Height of the bar. Default: 35dp.
+- **barMargin**: The margin between the bar and the borders of the container. Default: 10dp.
+- **roundedCorners**: Whether the bar and the container have rounded corners or not. Default: NO.
 
 ### Reloading
 
